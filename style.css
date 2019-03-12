@@ -1,0 +1,15 @@
+.logo-steam{
+    max-width: 90px;
+    max-height: 120px;
+}
+
+body{
+    background-image: url("img/wallpaper1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-wrapper{
+    color: transparent;
+}
