@@ -7,5 +7,37 @@
 //   return 'example';
 // };
 
-// window.example = example;
 
+const filterData = (data, condition) => {
+    const result = data.filter(element => {
+        return element.feedlabel.includes(condition) === true;
+    })
+    return result;
+}
+
+ const sortData = (data, condition) => {
+     const order = data.sort((a,b) => (a[condition] > b[condition]) ? 1 : -1);
+     return order;
+
+    //   let orderAz = data.sort((a,b) => {
+    // return a[sortBy].localeCompare(b[sortBy]);
+    //     })
+    //   if (sortOrder === "order-za"){
+    //   orderAz.reverse();
+    //   }
+    //   return orderAz;
+    // }
+
+
+    // const sortOrder = (data, condition) => {
+    //     const order = data.sort((a, b) => (a[condition] > b[condition]) ? 1 : -1);
+    //         return order;
+
+
+//const computeStats = (data) => {
+
+}
+
+window.filterData = filterData;
+window.sortData = sortData;
+//window.computeStats = computeStats;

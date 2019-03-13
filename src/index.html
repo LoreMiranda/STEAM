@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
     <!-- INICIO HEADER -->
 <header>
-    <nav>
-        <div class="row">
-            <div class="col s12 m12">
-              <div class="nav-wrapper">
-  <!-- revisar menu hamburguesa responsive-->  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
-                <img src="img/logo-steam.png" class="logo-steam">
-                <ul class="right hide-on-med-and-down">
-                  <li><a href="https://steamcommunity.com/?l=spanish" target="_blank">Comunidad Steam</a></li>
-                  <li><a href="badges.html"><i class="material-icons right"></i>Link with Right Icon</a></li>
+    <nav class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="img/logo-steam.png" class="logo-steam">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://steamcommunity.com/?l=spanish" target="_blank">Comunidad Steam</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-                </ul>
-              </div>
-            </div>
-          </div>
-            </nav>
+               
 </header>
 <!-- FIN HEADER -->
 
@@ -33,27 +37,46 @@
 <main>
 
 
+<!-- INICIO SELECT -->
+<div class="select-filter">
+  <select id="select-filter">
+    <option value="0">Filtrar por...</option>
+    <option value="TF2 Blog">TF2 Blog</option>
+    <option value="Product Update">Product Update</option>
+    <option value="Rock, Paper, Shotgun">Rock, Paper, Shotgun (RPS)</option>
+    <option value="Eurogamer">Eurogamer</option>
+    <option value="PC Gamer">PC Gamer</option>
+    
+  </select>
+</div>
+</div>
+
+<div class="select-order">
+  <select id="select-order">
+    <option value="0">Ordenar por Fecha</option>
+    <option value="1">Ascendente</option>
+    <option value="2">Descendente</option>
+  </select>
+</div>
+</div>
+
+<!-- FIN SELECT -->
 
 
-<!-- INICIO CARDS -->
+<!-- INICIO EJEMPLO CARDS -->
 
 
-    <!--<div class="row">
-        <div class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-      </div>-->
+    <!--<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>-->
 <!-- FIN CARD -->
+
 
 </main>
 <!-- FIN MAIN -->
@@ -64,7 +87,7 @@
           <div class="footer-copyright">
               <div class="container">
                   <div class="row">
-                      <div class="col l12 m12">
+                      <div class="col l12 l12">
                         </div>
                   </div>
               © 2019 Copyright
@@ -74,7 +97,9 @@
 <!-- FIN FOOTER -->
 
     <div id="root" class="container-fluid"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./data/steam/steam.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>

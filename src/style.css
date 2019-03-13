@@ -10,6 +10,18 @@ body{
     background-size: cover;
 }
 
-.nav-wrapper{
-    color: transparent;
+nav, .col.s12.m12, .page-footer, .footer-copyright{
+    background-color: rgba(41, 41, 73, 0.671);
+}
+
+/* .col.m8.m8{ */
+    
+
+
+nav, .nav-wrapper{
+    z-index: 100;
+}
+
+.page-footer{
+    background-color: transparent !important;
 }
