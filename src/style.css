@@ -10,18 +10,18 @@ body{
     background-size: cover;
 }
 
-nav, .col.s12.m12, .page-footer, .footer-copyright{
+/* nav, .col.s12.m12, .page-footer, .footer-copyright{
     background-color: rgba(41, 41, 73, 0.671);
+} */
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    width: 200%;
+    background-color: rgba(41, 41, 73, 0.671) !important;
+    z-index: 100 !important;
 }
-
-/* .col.m8.m8{ */
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+z-index: 100 !important;
+}
     
-
-
-nav, .nav-wrapper{
-    z-index: 100;
-}
-
 .page-footer{
     background-color: transparent !important;
 }

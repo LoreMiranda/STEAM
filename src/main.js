@@ -70,6 +70,18 @@ document.getElementById("select-order").addEventListener("change", () => {
   })
 })
 
+//calculo
+
+const calcule = document.getElementById('select-filter');
+calcule.addEventListener('click', () =>{
+let condition = calcule.value;
+let result = window.computeStats(data,condition);
+containerRoot.innerHTML+=`
+<h3>Total</h3>
+<p>${result}</p>`
+})
+
+
 // timeConverter(epoch => {
 //   let epoch = (data.date)
 //   let a = newDate(epoch * 1000);
@@ -84,8 +96,6 @@ document.getElementById("select-order").addEventListener("change", () => {
   
 
 // })
-
-
 
 }
 window.onload = showData(data);
