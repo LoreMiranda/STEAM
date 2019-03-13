@@ -70,5 +70,22 @@ document.getElementById("select-order").addEventListener("change", () => {
   })
 })
 
+// timeConverter(epoch => {
+//   let epoch = (data.date)
+//   let a = newDate(epoch * 1000);
+//   let months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+//   let year = a.getFullYear();
+//   let month = months[a.getMonth()];
+//   let date = a.getDate();
+//   let hour = a.getHours();
+//   let min = a.getMinutes();
+//   let time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min ;
+//   return time;
+  
+
+// })
+
+
+
 }
 window.onload = showData(data);
