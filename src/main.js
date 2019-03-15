@@ -15,6 +15,7 @@ const showData = (data) => {
          <p>${element.contents}</p>
               <p>Gid N°: ${element.gid}</p>
               <p>Feedlabel: ${element.feedlabel}</p>
+              <p>Date: ${element.date}</p>
          <a href="#" class="card-link">${element.url}</a>
        </div>
      </div>
@@ -38,6 +39,7 @@ document.getElementById("select-filter").addEventListener("change", () => {
          <p>${element.contents}</p>
               <p>Gid N°: ${element.gid}</p>
               <p>Feedlabel: ${element.feedlabel}</p>
+              <p>Date: ${element.date}</p>
          <a href="#" class="card-link">${element.url}</a>
        </div>
      </div>
@@ -62,6 +64,7 @@ document.getElementById("select-order").addEventListener("change", () => {
          <p>${element.contents}</p>
               <p>Gid N°: ${element.gid}</p>
               <p>Feedlabel: ${element.feedlabel}</p>
+              <p>Date: ${element.date}</p>
          <a href="#" class="card-link">${element.url}</a>
        </div>
      </div>
@@ -82,7 +85,7 @@ containerRoot.innerHTML+=`
 })
 
 
-// timeConverter(epoch => {
+// function timeConverter() {
 //   let epoch = (data.date)
 //   let a = newDate(epoch * 1000);
 //   let months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
@@ -93,9 +96,12 @@ containerRoot.innerHTML+=`
 //   let min = a.getMinutes();
 //   let time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min ;
 //   return time;
+// containerRoot.innerHTML+=`
+// <h3>Date</h3>
+// <p>${time}</p>`
   
 
-// })
+//  }
 
 }
 window.onload = showData(data);

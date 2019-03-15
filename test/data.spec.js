@@ -4,7 +4,7 @@ require('../src/data');
 require('./data.spec.js');
 
 
-describe('Función filterData', () => {
+describe('Funcion filterData', () => {
   const data = [{
     feedlabel: "Product Update",
     title: "Team Fortress 2 Update Released",
@@ -22,4 +22,4 @@ describe('Función filterData', () => {
   it('debería retornar "Product Update" para title "Team Fortress 2 Update Released"', () => {
     assert.deepEqual(window.filterData(data, "Team Fortress 2 Update Released"), [{feedlabel: "Product Update", title: "Team Fortress 2 Update Released"}]);
   });
-})
+});
