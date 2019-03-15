@@ -1,6 +1,6 @@
 /* Manejo del DOM */
 
-const data = STEAM.appnews.newsitems;
+const data = window.STEAM.appnews.newsitems;
 const containerRoot = document.getElementById("root");
 const showData = (data) => {
 

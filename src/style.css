@@ -27,4 +27,10 @@ body{
 .card{
     background-color: rgba(54, 54, 73, 0.87) !important;
     color: rgb(221, 221, 221);
+    margin: 2%;
+    
+}
+
+.select-filter, .select-order{
+    display: inline-block;
 }
