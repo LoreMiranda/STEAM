@@ -1,4 +1,4 @@
-/* Manejo de data */
+/*Manejo de data */
 
 // const example = () => {
 //   return 'example';
@@ -6,23 +6,23 @@
 
 
 const filterData = (data, condition) => {
-    const result = data.filter(element => {
-         return element.feedlabel.includes(condition) === true;
-    })
-         return result;
+   const result = data.filter(element => {
+        return element.feedlabel.includes(condition) === true;
+   })
+        return result;
 }
 
 const sortData = (data, condition) => {
-    let order = data.sort((a,b) => (a[condition] > b[condition]) ? 1 : -1);
-         return order;
+   let order = data.sort((a,b) => (a[condition] > b[condition]) ? 1 : -1);
+        return order;
 
 }
 
 const computeStats = (data, condition) => {
-    let result = filterData(data, condition).length;
-         return result;
-      
-      };
+   let result = filterData(data, condition).length;
+        return result;
+
+     };
 
 
 
