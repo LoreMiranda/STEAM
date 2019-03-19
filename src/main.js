@@ -4,7 +4,6 @@ const containerRoot = document.getElementById("root");
 const showData = (data) => {
 
 
-
       data.forEach(element => {
       containerRoot.innerHTML += `
       <div class="row">
@@ -19,7 +18,6 @@ const showData = (data) => {
       </div>
     </div>
     </div>`
-
       })
 
 //FILTRO
@@ -43,8 +41,6 @@ document.getElementById("select-filter").addEventListener("change", () => {
       </div>
     </div>
     </div>`
-
-
  })
 })
 
@@ -68,7 +64,6 @@ document.getElementById("select-order").addEventListener("change", () => {
       </div>
     </div>
     </div>`
-
  })
 })
 
@@ -78,29 +73,12 @@ const calcule = document.getElementById('select-filter');
 calcule.addEventListener('click', () =>{
 let condition = calcule.value;
 let result = window.computeStats(data,condition);
+
 containerRoot.innerHTML+=`
 <h3>Total</h3>
 <p>${result}</p>`
 })
 
-
-// function timeConverter() {
-//   let epoch = (data.date)
-//   let a = newDate(epoch * 1000);
-//   let months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-//   let year = a.getFullYear();
-//   let month = months[a.getMonth()];
-//   let date = a.getDate();
-//   let hour = a.getHours();
-//   let min = a.getMinutes();
-//   let time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min ;
-//   return time;
-// containerRoot.innerHTML+=`
-// <h3>Date</h3>
-// <p>${time}</p>`
-
-
-//  }
 
 }
 window.onload = showData(data);

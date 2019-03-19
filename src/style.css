@@ -10,9 +10,6 @@
     background-size: cover;
  }
  
- /* nav, .col.s12.m12, .page-footer, .footer-copyright{
-    background-color: rgba(41, 41, 73, 0.671);
- } */
  .navbar.navbar-expand-lg.navbar-light.bg-light{
     width: 200%;
     background-color: rgba(255, 255, 255, 0.301) !important;
@@ -28,9 +25,12 @@
     background-color: rgba(54, 54, 73, 0.87) !important;
     color: rgb(221, 221, 221);
     margin: 2%;
- 
  }
  
  .select-filter, .select-order{
     display: inline-block;
+ }
+
+ h3, p{
+   color: rgb(221, 221, 221);
  }

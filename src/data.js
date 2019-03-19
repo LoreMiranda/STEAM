@@ -1,10 +1,3 @@
-/*Manejo de data */
-
-// const example = () => {
-//   return 'example';
-// };
-
-
 const filterData = (data, condition) => {
    const result = data.filter(element => {
         return element.feedlabel.includes(condition) === true;
@@ -23,7 +16,6 @@ const computeStats = (data, condition) => {
         return result;
 
      };
-
 
 
 window.filterData = filterData;
