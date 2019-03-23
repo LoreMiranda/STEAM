@@ -19,12 +19,14 @@
  .page-footer{
     background-color: transparent !important;
     color: rgb(221, 221, 221);
+    text-align: center;
  }
  
  .card{
     background-color: rgba(54, 54, 73, 0.87) !important;
     color: rgb(221, 221, 221);
     margin: 2%;
+    align-content: center;
  }
  
  .select-filter, .select-order{
